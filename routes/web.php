@@ -38,3 +38,4 @@ Route::group(['prefix' => 'admin'],function(){
     });
 });
 
+Route::get('/',['as' => 'home.index','uses' =>'HomeController@index']);
