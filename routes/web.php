@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return 'welcome';
+Route::get('hello/{name?}', function ($name = 'Everybody') {
+    return 'welcome,'.$name;
 });
 
 Route::get('/',function(){
